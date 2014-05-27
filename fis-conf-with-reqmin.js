@@ -4,7 +4,8 @@ fis.config.merge({
         postprocessor : {
             js : 'jswrapper'
         },
-        postpackager : 'autoload, reqmin'
+        prepackager : 'autoload',
+        postpackager : 'reqmin'
     },
     settings : {
         postprocessor : {
