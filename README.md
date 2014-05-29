@@ -6,7 +6,7 @@ modjs-autoload-demo基于[modjs-todo-demo](https://github.com/fouber/modjs-todo-
 ## modjs-autoload-demo插件介绍
  - 使用[fis-postprocessor-require-async](https://github.com/xiangshouding/fis-postprocessor-require-async) 分析require.async异步加载资源(可选)
  - 使用[fis-prepackager-autoload](https://github.com/hefangshi/fis-prepackager-autoload) 自动加载同步异步资源
- - 使用[fis-postpackager-combine](https://github.com/hefangshi/fis-postpackager-combine) 按页面自动合并静态资源，提高性能
+ - 使用[fis-postpackager-simple](https://github.com/hefangshi/fis-postpackager-simple) 按页面自动合并静态资源，提高性能
 
 ## 安装fis
 
@@ -21,7 +21,7 @@ npm install -g fis
 ```bash
 npm install -g fis-postprocessor-require-async #可选
 npm install -g fis-prepackager-autoload
-npm install -g fis-postpackager-combine
+npm install -g fis-postpackager-simple
 ```
 
 ## 让代码跑起来！
@@ -50,10 +50,10 @@ fis release
 
 第五步，优化性能
 
-虽然目前项目可以正常运行，但是这种加载方式会造成连接数过多，让我们调整配置，使用[combine](https://github.com/hefangshi/fis-postpackager-combine)插件为我们合并资源
+虽然目前项目可以正常运行，但是这种加载方式会造成连接数过多，让我们调整配置，使用[simple](https://github.com/hefangshi/fis-postpackager-simple)插件为我们合并资源
 
 ```bash
-fis release -pf fis-conf-with-combine.js
+fis release -pf fis-conf-with-simple.js
 ```
 
 再次浏览页面，我们可以发现原有的大量静态资源已经自动合并。
