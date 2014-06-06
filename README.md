@@ -5,7 +5,7 @@ modjs-autoload-demo基于[modjs-todo-demo](https://github.com/fouber/modjs-todo-
 
 ## modjs-autoload-demo插件介绍
  - 使用[fis-postprocessor-require-async](https://github.com/xiangshouding/fis-postprocessor-require-async) 分析require.async异步加载资源(可选)
- - 使用[fis-prepackager-autoload](https://github.com/hefangshi/fis-prepackager-autoload) 自动加载同步异步资源
+ - 使用[fis-postpackager-autoload](https://github.com/hefangshi/fis-postpackager-autoload) 自动加载同步异步资源
  - 使用[fis-postpackager-simple](https://github.com/hefangshi/fis-postpackager-simple) 按页面自动合并静态资源，提高性能
 
 ## 安装fis
@@ -20,7 +20,7 @@ npm install -g fis
 
 ```bash
 npm install -g fis-postprocessor-require-async #可选
-npm install -g fis-prepackager-autoload
+npm install -g fis-postpackager-autoload
 npm install -g fis-postpackager-simple
 ```
 
